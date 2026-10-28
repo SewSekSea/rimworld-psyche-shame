@@ -1,0 +1,76 @@
+{
+  "name": "Shame",
+  "packageId": "shame.witness",
+  "assemblyName": "Shame",
+  "repositoryName": "rimworld-psyche-shame",
+  "workshopId": "3805970762",
+  "metadataVersions": [
+    "1.6",
+    "1.7"
+  ],
+  "originalSourceUnit": "Psyche Mods/Shame",
+  "sourceSnapshotUtc": "2026-10-28T17:10:15.103Z",
+  "sourceFileFingerprints": [
+    {
+      "path": "About/About.xml",
+      "sha256": "ED81ED1902FFC1768CE2800D4A8B54B78645D6DC47C07A38C2BA5DB7BFC0E903",
+      "bytes": 3783
+    },
+    {
+      "path": "About/Preview.png",
+      "sha256": "7409E798B678BE17B3C8CDEA473044F845485DB29A20D579CE0A1F6E7B8E5801",
+      "bytes": 82498
+    },
+    {
+      "path": "About/PublishedFileId.txt",
+      "sha256": "151DD4BEAD2D0578D86901FDF050F9B0C125CDD9D9B1F7FBD732D4F9E18BABA3",
+      "bytes": 10
+    },
+    {
+      "path": "Defs/ThoughtDefs/Shame_Thoughts.xml",
+      "sha256": "0BC0BAD0F9B444D3C6017198C039B0C7096E32482185CD7A906DC0F0E347EB96",
+      "bytes": 4131
+    },
+    {
+      "path": "Source/Shame/Bridges.cs",
+      "sha256": "B20AC0FD20ACD71F5C758DF1A4595F14FC4DCB9A27EB132A778D62102FCD1DA3",
+      "bytes": 8301
+    },
+    {
+      "path": "Source/Shame/Exposures.cs",
+      "sha256": "4455DADC0B853CA6F271F4B4D9A61367A0165A33553D79737F83DBC81DCEBAC4",
+      "bytes": 9422
+    },
+    {
+      "path": "Source/Shame/Settings.cs",
+      "sha256": "78B977BDCD062B039E9093DF9FC22D004E55ACFA73BFB280ADAB20B73D5BF75F",
+      "bytes": 4332
+    },
+    {
+      "path": "Source/Shame/Shame.csproj",
+      "sha256": "7379D99A4B4B62B9841718FA93B4B5BFF5CBBACF6CE77FBDA0CD82628983577D",
+      "bytes": 1625
+    },
+    {
+      "path": "Source/Shame/ShameCore.cs",
+      "sha256": "80AC806CC46DD1D6167EE8979D82BFE0443C55D8F8F398FC7B22EBCACE4DFC0C",
+      "bytes": 9422
+    },
+    {
+      "path": "Source/Shame/Witnesses.cs",
+      "sha256": "EB3149878260468236577ACD89C1B0F93F75855027A44A5C1870899008AFF727",
+      "bytes": 24055
+    },
+    {
+      "path": "Source/Shame/Workers.cs",
+      "sha256": "1E0D1ACD79D2FAA630EBB55CDD4EF9846CBEC596FCC6E5613733DB881B0E11B1",
+      "bytes": 4117
+    }
+  ],
+  "stagedProjectAdjustments": [],
+  "build16": "NOT_RUN_THIS_PASS",
+  "build17": "COMPILED_AGAINST_LOCAL_1.7_API",
+  "nativePlaytest": "NOT_RUN_THIS_PUBLICATION_PASS",
+  "gameplaySourceModified": false,
+  "compiled17SHA256": "63F909EB57E0F6952E8D097F594CBB2DFD5D354780461AFFE764739F0FCC7AB5"
+}

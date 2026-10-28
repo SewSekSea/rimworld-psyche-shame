@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Shame</name>
+  <author>T&amp;B Modding</author>
+  <packageId>shame.witness</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Guilt says I did a bad thing. Shame says I am a bad thing.
+
+Guilt is about an event, so time moves it further away and telling somebody takes the weight off. Shame is not about an event. It is a conclusion a person has drawn about themselves, and time does not argue with a conclusion.
+
+This is the mod where a colonist stops treating the worst evening of their life as something that happened to them.
+
+It is made of people, not of time
+
+Shame here is a list of names: everybody who was close enough to see. Nothing on that list decays. There is no clock anywhere in this mod and no setting to add one.
+
+What puts somebody on the list
+- Coming apart where people could see it. The heaviest by a distance.
+- A row in public. A social fight counts for both of them, whoever started it.
+- Being spoken to like that. An insult, in front of others.
+- Being turned down. A romance rebuffed, a proposal refused.
+- Being carried in. Going down and being picked up by somebody else.
+- Making it worse. A surgeon botching an operation - this one lands on the surgeon, and the patient is the witness.
+
+Only the nearest few count, and only people who could actually see.
+
+What it does to them
+
+A colonist cannot be around somebody who was there. Their opinion of every witness drops, and nobody else's opinion of them changes at all - the witness usually thinks nothing of it. They watched a friend have a bad night.
+
+That one-sidedness is the whole mod. Shame walks a colonist away from exactly the people who could end it.
+
+The only thing that works
+
+One of the people who was there has to come over and talk to them. Not be talked to - come over. Each conversation takes a little of it off, and when the last of it goes, that person becomes somebody who saw you at your worst and kept coming back anyway. That is worth more than never having been seen.
+
+Kindness from somebody who was not there does nothing here. It lifts the mood. It does not touch what is underneath.
+
+Who does not feel it
+- A Psychopath has no picture of how they look to anybody.
+- A Sociopath only has one for the handful of people who are real to them. Everyone else could watch and it would not register.
+- A Narcissist keeps every name on the list and carries none of the weight. It does not become a fact about them. It becomes a fact about whoever was watching.
+- Somebody who has come through something in Mettle has the one piece of evidence that contradicts it.
+- Somebody who stood next to you in a fight does not count as having seen you come apart.
+
+Adding it to a save in progress starts everyone at nothing. The base game does not record who was standing there, so there is no history to read.
+
+Settings
+Options - Mod settings - Shame. Adjust how hard being seen lands, how much a colonist thinks of a witness, and how much a conversation takes off. Each of the six sources can be switched off on its own.
+
+Requires Harmony. Safe to add to an existing save. RimWorld 1.6, no DLC needed.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+    <li>sociopath.trait</li>
+    <li>squad.morale</li>
+    <li>guilt.conscience</li>
+    <li>solace.comfort</li>
+    <li>crew.factions</li>
+    <li>mettle.growth</li>
+    <li>narcissist.trait</li>
+    <li>resentment.fairness</li>
+  </loadAfter>
+</ModMetaData>

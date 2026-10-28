@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    Shame itself. A situational thought whose stage comes from the total weight of everyone who
+    is still carrying something they saw. Guilt is a ledger of deeds and it fades; this is a
+    ledger of people and it does not. Nothing here decays on a clock. The only thing that moves
+    the number down is one of those people coming back.
+
+    Psychopath is nullified here. Sociopath is not, because that trait belongs to another mod in
+    the set and naming it here would be a config error for anybody running this one on its own.
+    It is handled in code instead, where a full Sociopath only ever counts the handful of people
+    who are real to them. Bloodlust is deliberately NOT nullified, unlike Guilt: enjoying violence
+    has nothing to do with whether being seen falling apart is humiliating.
+  -->
+  <ThoughtDef>
+    <defName>SH_Shame</defName>
+    <workerClass>Shame.ThoughtWorker_Shame</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Adult</developmentalStageFilter>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>they saw</label>
+        <description>Somebody was standing right there. I keep going over what it must have looked like from where they were.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>I know what they think of me</label>
+        <description>They have not said anything. They do not have to. I was there too, and I know what I looked like.</description>
+        <baseMoodEffect>-7</baseMoodEffect>
+      </li>
+      <li>
+        <label>I am what they saw</label>
+        <description>It was not a bad day. A bad day is a thing that happens to you. That was me, and enough people watched it that there is no arguing with it now.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!--
+    Pointed at one particular person: the shamed colonist cannot be around somebody who was
+    there. The opinion drops on THEIR side, not the witness's - the witness may think nothing
+    of it at all. That asymmetry is the whole mod. Shame pushes a colonist away from exactly
+    the people who could end it.
+
+    Staged by how much that one witness is carrying, so somebody who saw one bad evening is not
+    the same as somebody who has watched them come apart four times.
+  -->
+  <ThoughtDef>
+    <defName>SH_TheySawMe</defName>
+    <thoughtClass>Shame.Thought_Witnessed</thoughtClass>
+    <workerClass>Shame.ThoughtWorker_TheySawMe</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Adult</developmentalStageFilter>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>they were there</label>
+        <baseOpinionOffset>-6</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they have seen me like that</label>
+        <baseOpinionOffset>-13</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they know exactly what I am</label>
+        <baseOpinionOffset>-22</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!--
+    The other end of it. A witness who kept coming back until there was nothing left to carry.
+
+    This is the only thing in the mod that heals anything, and it is worth more than the shame
+    it replaced: being seen at your worst by somebody who then turned out to still want your
+    company is a stronger tie than never having been seen at all.
+  -->
+  <ThoughtDef>
+    <defName>SH_TheyStayed</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>45</durationDays>
+    <stackLimit>200</stackLimit>
+    <stackLimitForSameOtherPawn>2</stackLimitForSameOtherPawn>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>they stayed</label>
+        <baseOpinionOffset>18</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
